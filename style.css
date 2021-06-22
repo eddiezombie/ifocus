@@ -1,0 +1,102 @@
+/*
+theme name: iFocus
+version: 1.0
+Description: Sitio para inmobiliaria iFocus
+Author: Edinson Rodriguez
+Author URI:
+License: GNU General Public Licence v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+*/
+@import url(css/header.css);
+@import url(css/button.css);
+@import url(css/project.css);
+@import url(css/success.css);
+@import url(css/process.css);
+@import url(css/contact.css);
+@import url(css/footer.css);
+@import url(css/fontawesome.css);
+*{
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background: #e7edf3;
+}
+
+
+
+.happy{
+
+}
+.happy__main{
+padding: 0px;
+background: url(assets/img/slide-2.jpeg) right -60px no-repeat;
+background-size: 100%;
+margin:30px 0 0 0 ;
+}
+.happy__main .happy__txt{
+  padding:50px 50px;
+  background: rgba(0, 0, 0, 0.4);
+   width: 600px;
+}
+.happy__main h3{
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+}
+.happy__main p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+}
+.container-fluid{
+  max-width: 1260px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #212529!important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #212529!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #212529!important;
+}
+
+h2.title{
+  color: #646464;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 30px;
+  position: relative;
+  vertical-align: middle;
+}
+h2.title::after{
+  display: block;
+  content: "■";
+  color: #b41128;
+  font-size: 28px;
+  width: 100%;
+  height: 100%;
+  display: inline;
+  vertical-align: middle;
+  z-index: 1;
+  position: relative;
+  top: -8px;
+}
+
+@media (max-width: 991px) {
+  .happy__main{
+background: url(assets/img/slide-2.jpeg) right 0px no-repeat;
+background-size: cover;
+}
+  .happy__main .happy__txt{
+    width: 100%;
+    padding:30px 50px;
+  }
+}
+

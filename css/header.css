@@ -1,0 +1,148 @@
+
+.top{
+  background: #000;
+  padding: 10px 0;
+  text-align: center;
+  color:#fff;
+  font-size: 14px;
+}
+.top .container{
+  text-align: right;
+}
+.top a{
+  color: rgb(181, 181, 181);;
+  text-decoration: none;
+  font-size: 14px;
+}
+.top div{
+  display: inline-block;
+  padding-left: 30px;
+  text-align: right;
+}
+
+/**/
+.main{
+  position: relative;
+}
+.main .menu{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width:100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+
+}
+.main .menu img{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.menu__click{
+  display: none;
+  color:#ffffff;
+  font-size: 40px;
+  position: absolute;
+  right: 20px;
+  top:10px;
+  z-index: 40;
+}
+.menu__click:active,
+.menu__click:Focus,
+.menu__click:visited{
+  color: #ffffff;
+ }
+.main ul{
+  list-style: none;
+  padding:0px;
+  margin:0;
+  display: flex;
+  width:100%;
+}
+.main li{
+flex-grow: 1;
+}
+.main li a{
+  color:#fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding:27px 10px;
+  display: block;
+  text-align: center;
+  transition: all 500ms;
+  text-transform: uppercase;
+}
+.main li a:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+.main .banner{
+  position: relative;
+}
+.banner__txt{
+  position: absolute;
+  left: 100px;
+  bottom:50px;
+  background: rgba(0, 0, 0, 0.3);
+  padding:20px 20px;
+  z-index: 2;
+}
+.banner__txt h1{
+  color: #fff;
+  font-size: 34px;
+}
+.banner__txt a{
+  display: inline-block;
+  margin-top:20px;
+}
+.main .banner img{
+  width: 100%;
+}
+/**/
+@media (max-width: 991px) {
+  .menu__click{
+    display: block;
+  }
+  .main ul.menu__list{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 30;
+    height: 0vh;
+    opacity: 0;
+    transition: all 1500ms;
+    overflow: hidden;
+  }
+  .menu__list-show{
+    display:block!important;
+    opacity: 1!important;
+    height: 100vh!important;
+  }
+  .main li a{
+    padding: 18px 10px;
+  }
+}
+@media (max-width: 800px) {
+  .banner{
+    height: 300px;
+  }
+
+  .main .banner img{
+    height: 100%;
+     width: auto;
+    position: relative;
+  }
+  .banner__txt{
+    position: absolute;
+    left: 20px;
+    bottom:30px;
+    background: rgba(0, 0, 0, 0.3);
+    padding:10px 10px;
+    z-index: 2;
+  }
+  .banner__txt h1{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom:10px;
+  }
+}
